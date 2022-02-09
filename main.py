@@ -2,9 +2,13 @@ if __name__ == '__main__':
     import main_menu as mn
     import do_menu1 as do_mn1
     import do_menu2 as do_mn2
+    import pymongo
+
+    myclient = pymongo.MongoClient('mongodb://localhost:27017/')
+    mydb = myclient['stikom']
 
     lanjut = 1
-    ls_matkul = []
+    ls_matkul = mydb['list matakuliah']
     while lanjut == 1:
         mn.menu()
         

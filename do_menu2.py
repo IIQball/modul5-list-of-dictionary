@@ -2,9 +2,7 @@ def garis() :
     print('-------------------------------------------------------------------')
 
 def cetak(ls_matkul):
-    # matkul1 = {'kode' : '001', 'nama' : 'alpro', 'sks' : 4, 'nilai' : 'A'}
-    # matkul2 = {'kode' : '002', 'nama' : 'daspro', 'sks' : 3, 'nilai' : 'B'}
-    # ls_matkul = [matkul1,matkul2]
+    
     print()
     print('Kartu Hasil Studi')
     garis()
@@ -14,7 +12,7 @@ def cetak(ls_matkul):
     dict_poin = {'A' : 4, 'B' : 3, 'C' : 2, 'D' : 1}
     total_sks = 0
     total_KxP = 0
-    for matkul in ls_matkul :
+    for matkul in ls_matkul.find() :
         poin = dict_poin[matkul['nilai']]
         total_sks = total_sks + matkul['sks']
         KxP = matkul['sks'] * poin
